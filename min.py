@@ -1,2 +1,8 @@
-list=[[1,2,3,[4,5,6,[7,8,9],[10,11,21]]]]
-print(list[0][1],",",list[0][3][2],",",list[0][3][3][0],",",list[0][3][4][0],",",list[0][3][4][2])
+def function_num(a,b,c):
+    if a<b and a<c:
+        print(a,"is the minimum")
+    elif b<a and b<c:
+        print(b,"is the minimum")
+    else:
+        print(c,"is the minimum")
+function_num(4,2,7)
