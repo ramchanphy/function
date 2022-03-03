@@ -4,7 +4,6 @@ def function_name(name):
     while i<len(name):
         j=0
         while j<len(name[i]):
-            # if 
             count+=1
             j+=1
         i+=1
