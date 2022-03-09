@@ -1,5 +1,3 @@
-# import time
-# import sys
 import random
 def win():
     print("THE GAME: you win")
@@ -16,8 +14,7 @@ def the_game():
     while attempts>0:
         if attempts==0:
             print("THE GAME: you fail to provide the correct option to play the game,goodbye")
-            # time.sleep(3)
-            # sys.exit(0)
+            
         player=str(input("player:")).lower()
         if player.lower() not in moves:
             print(f"THE GAME:invalid option! you have {attempts} attempts left.")
@@ -42,19 +39,7 @@ def the_game():
                 lost()
             else:
                 pass
-            # play_again=str(input("THE GAME:retry? (y/n):"))
-            # if play_again.lower()=="y":
-            #     attempts-=1
-            #     # the_game()
-            # elif play_again.lower()=="n":
-            #     print("THE GAME: game over")
-            #     break
-            #     # time.sleep(2.5)
-            #     # sys.exit(0)
-            # else:
-            #     print("THE GAME:invalid option")
-                # time.sleep(2.5)
-                # sys.exit(0)
+            
         attempts-=1
 win()
 lost()

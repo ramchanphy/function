@@ -6,4 +6,4 @@ def expanded_form(num):
             a.append(s + "0" * i)
         i -= 1
     return " + ".join(a)
-print(expanded_form(int(input("enter the number"))))
+print(expanded_form(int(input("enter the number")))) 
