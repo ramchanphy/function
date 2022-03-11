@@ -7,7 +7,10 @@ def very_even(n):
         i+=1
     s=str(sum)
     if len(s)==1:
-        print(s,"very even")
+        if int(s)%2==0:
+            print(s,"very even")
+        else:
+            print(s,"odd")
     else:
         n=s
         return(very_even(sum))
