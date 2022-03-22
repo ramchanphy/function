@@ -1,5 +1,5 @@
 def function_num():
-    i=1
+    i=2
     while i<=30:
         count = 0
         j = 2
@@ -8,7 +8,7 @@ def function_num():
                 count = count + 1
             j+=1
         if count == 0 and i!= 1:
-            print(i)
+            print(i,end=",")
         i+=1
 function_num()
 
