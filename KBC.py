@@ -19,7 +19,7 @@ def num():
         if result==True:
             print("congratulation,you got the correct answer")
         else:
-            print("you got the wrong answer")
+            print("you got the wrong answ                                                             er")
             break
         j+=1
 def main():
