@@ -1,5 +1,6 @@
 def add(a,b):
-    return(a+b)
+    d=a+b
+    return(d)
 def sub(c,d):
     print(add)
     return c

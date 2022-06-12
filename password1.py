@@ -1,30 +1,33 @@
-def strong_password(password):
-    digit='0123456789'
-    capital_alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    small_alphabet='abcdefghijklmnopqrstuvwxyz'
-    special_char='@#$_'
-    sum=0
-    a=0
-    x=0
-    y=0
-    z=0
-   
-    if len(password)>6 or len(password)<=16:
+def fun(password):
+    d="0123456789"
+    ca="A-Z"
+    a="a-z"
+    c="*_-@!"
+    # sum=0
+    e=0
+    b=0
+    f=0
+    g=0
+    if password[0] not in d:
         i=0
-        while i<(len(password)):
-            if password[i] in digit:
-                x=1
-            elif password[i] in capital_alphabet:
-                y=1
-            elif password[i] in small_alphabet:
-                z=1
-            elif password[i] in special_char:
-                a=1
-            i=i+1
-        sum=x+y+z+a
-        if sum<4:
-            print("password should have atleast one capital,one small,one special character and one digit ")
+        while i<len(password):
+            if password[i] in d:
+                e=1
+            elif password[i] in ca:
+                b=1
+            elif password[i] in a:
+                f=1
+            elif password[i] in c:
+                g=1
+            i+=1
+        if (e+b+f+g)<4:
+            print(0)
         else:
-            print("strong password ")
-password=input("enter the password:-")
-strong_password(password)
+            print(1)
+    else:
+        print(0)
+password=input()
+fun(password)
+
+
+
